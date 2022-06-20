@@ -1,0 +1,79 @@
+        *{
+            border: 0;
+            padding: 0;
+            margin: 0;
+            border-style: none;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(balão.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .blur{
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            position: absolute;
+
+            width: 25vw;
+            min-width: 300px;
+            height: 60vh;
+            max-height: 450px;
+
+            border: solid black 1px;
+            border-radius: 15px;
+        }
+        .blur h1{
+            padding: 20px;
+        }
+        .blurcontent input{
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 80%;
+            line-height: 20px;
+            padding: 5px;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .blurcontent h2{
+            position: relative;
+            left: 10px;
+            padding: 5px 0;
+        }
+        .blurcontent{
+            width: 90%;
+            height: 100%;
+            position: relative;
+            left: 30px;
+        }
+        .pronto{
+            border: solid 1px black;
+            border-radius: 5px;
+            background-color: black;
+            padding: 10px;
+
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+        .pronto:hover{
+            border: solid 1px black;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+
+            transition: .1s ease-in-out;  
+        }
